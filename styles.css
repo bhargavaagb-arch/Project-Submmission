@@ -1,0 +1,824 @@
+/* =========================
+   BASIC RESPONSIVE SETTINGS
+========================= */
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+   width: 100%;
+}
+
+body {
+   background-color: #000000;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+header h1 {
+   text-align: center;
+   color: white;
+   border: 5px solid red;
+   border-width: 0px 0px 3px 0px;
+   padding: 10px;
+}
+
+#hardwork {
+   color: red;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+#logo-image {
+   margin: 15px 0px 0px 0px;
+   width: auto;
+   max-width: 100%;
+   border-radius: 60%;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+p,
+h2,
+li,
+label,
+h3 {
+   color: white;
+}
+
+#contact-p {
+   text-align: center;
+   padding: 0 15px;
+}
+
+#gym-name {
+   color: white;
+}
+
+
+/* =========================
+   MAIN HEADER
+========================= */
+
+.main-header {
+   text-align: center;
+   background-color: #111111;
+   width: 100%;
+}
+
+.main-header h1 {
+   margin-bottom: 10px;
+}
+
+
+/* =========================
+   LOGO + TAGLINE
+========================= */
+
+.taglogo-align {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+   padding: 0 20px 20px;
+}
+
+.taglogo-align img {
+   width: 150px;
+   height: 150px;
+   object-fit: cover;
+   flex-shrink: 0;
+}
+
+.taglogo-align a{
+   align-items: end;
+}
+
+.tag-content {
+   text-align: center;
+   max-width: 400px;
+}
+
+.tag-content h2 {
+   margin: 0 0 10px;
+   color: yellow;
+}
+
+
+.tag-content p {
+   margin: 0;
+   line-height: 1.5;
+   color: yellow;
+}
+
+
+/* =========================
+   STICKY NAVIGATION
+   LAPTOP / DESKTOP / TABLET
+========================= */
+
+.stick-nav {
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   background-color: #111111;
+   width: 100%;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+#intro-para {
+   max-width: 1000px;
+   width: 90%;
+   margin: auto;
+   text-align: center;
+   padding: 80px 0px 0px 0px;
+   font-size: larger;
+   font-weight: 400;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   flex-wrap: wrap;
+   text-align: center;
+   padding: 15px;
+   border: 5px solid red;
+   border-width: 0px 0px 3px 0px;
+}
+
+.nav a {
+   color: white;
+   text-decoration: none;
+   font-size: 15px;
+   margin: 0 15px;
+   padding: 8px 15px;
+   border-radius: 5px;
+   transition: 0.3s;
+   display: inline-block;
+}
+
+.nav a:hover {
+   background-color: #1F6F5F;
+   color: white;
+   transform: scale(1.1);
+}
+
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why-choose {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: center;
+   text-align: center;
+
+   padding: 100px 10% 100px 10%;
+
+   font-size: larger;
+   font-weight: 400;
+
+   min-height: 500px;
+   height: auto;
+
+   background-image: url(./Images/ambitious-studio-rick-barrett-w7jYaN7GqyA-unsplash.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.why-child-div {
+   background-color: rgba(0, 0, 0, 0.65);
+   padding: 25px 35px;
+   border-radius: 15px;
+   border: 2px solid #FFD700;
+
+   max-width: 500px;
+   width: 100%;
+}
+
+.why-child-div h2 {
+   color: white;
+   text-align: center;
+}
+
+.why-child-div li {
+   color: white;
+   margin: 5px 0;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.our-services {
+   display: flex;
+   justify-content: center;
+   align-items: stretch;
+   text-align: center;
+   margin: 30px;
+   gap: 20px;
+}
+
+.our-services div {
+   background-color: #1F6F5F;
+   color: white;
+
+   padding: 30px;
+   margin: 0;
+
+   text-align: center;
+
+   width: 20%;
+   min-height: 200px;
+   height: auto;
+
+   font-size: larger;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   transition: transform 0.3s ease;
+}
+
+.our-services div:hover {
+   transform: scale(1.1);
+}
+
+
+/* =========================
+   SERVICE BACKGROUND IMAGES
+========================= */
+
+#strength {
+   background-image: url(./Images/full-length-muscular-build-man-concentrating-before-lifting-barbell-strength-training-gym.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: bottom;
+}
+
+#personal {
+   background-image: url(./Images/indian-man-doing-excercisses-special-equipment-gym-with-personal-trainer.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+#cardio {
+   background-image: url(./Images/two-internationals-friends-is-engaged-gym.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+#service-head {
+   text-align: center;
+}
+
+
+/* =========================
+   REVIEWS
+========================= */
+
+#review-head {
+   text-align: center;
+}
+
+.reviews {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: flex-start;
+   gap: 30px;
+   padding: 0 30px;
+}
+
+.reviews > div {
+   width: 30%;
+}
+
+.reviews p {
+   text-align: center;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+   color: #000000;
+   text-align: center;
+   padding: 25px;
+   margin-top: 40px;
+   width: 100%;
+}
+
+footer h3 {
+   color: white;
+   margin-bottom: 10px;
+   border: 5px solid red;
+   border-width: 3px 0px 0px 0px;
+   padding-top: 15px;
+}
+
+footer p {
+   margin: 8px;
+}
+
+
+/* =========================
+   MEMBERSHIP
+========================= */
+
+#member-head {
+   text-align: center;
+}
+
+#choose-plan {
+   text-align: center;
+   font-size: larger;
+   font-weight: 300;
+   padding: 0 15px;
+}
+
+.membership-plans {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: stretch;
+   text-align: center;
+   gap: 25px;
+   padding: 0 30px;
+}
+
+.membership-plans div {
+   background-color: rgba(0, 0, 0, 0.65);
+   padding: 25px 50px;
+   border-radius: 15px;
+   border: 2px solid #FFD700;
+   flex: 1;
+   max-width: 400px;
+}
+
+#join-now {
+   background-color: #E10600;
+   color: white;
+   border: 2px solid #E10600;
+   padding: 8px 15px;
+   border-radius: 8px;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+#join-now:hover {
+   background-color: #000;
+   border-color: #FFD700;
+   color: #FFD700;
+   transform: scale(1.05);
+}
+
+
+/* =========================================================
+   TABLET
+   Screens approximately 769px - 1024px
+
+   NAV REMAINS STICKY
+========================================================= */
+
+@media (max-width: 1024px) {
+
+   .taglogo-align {
+      gap: 25px;
+   }
+
+   .tag-content {
+      max-width: 350px;
+   }
+
+   #intro-para {
+      width: 85%;
+      padding-top: 60px;
+   }
+
+   .nav {
+      gap: 10px;
+   }
+
+   .nav a {
+      margin: 0 5px;
+   }
+
+   .why-choose {
+      padding: 80px 7%;
+   }
+
+   .our-services {
+      margin: 20px;
+      gap: 15px;
+   }
+
+   .our-services div {
+      width: 30%;
+      padding: 20px;
+   }
+
+   .reviews {
+      gap: 20px;
+      padding: 0 20px;
+   }
+
+   .reviews > div {
+      width: 30%;
+   }
+
+   .membership-plans {
+      gap: 15px;
+      padding: 0 20px;
+   }
+
+   .membership-plans div {
+      padding: 25px 30px;
+   }
+}
+
+
+/* =========================================================
+   MOBILE
+   Screens 768px and below
+
+   NAV IS NOT STICKY
+========================================================= */
+
+@media (max-width: 768px) {
+
+   /* ---------- HEADER ---------- */
+
+   header h1 {
+      font-size: 1.7rem;
+      padding: 10px 15px;
+   }
+
+   .taglogo-align {
+      flex-direction: column;
+      gap: 15px;
+      padding: 10px 20px 25px;
+   }
+
+   .taglogo-align img {
+      width: 120px;
+      height: 120px;
+   }
+
+   .tag-content {
+      width: 100%;
+      max-width: 450px;
+   }
+
+   .tag-content h2 {
+      font-size: 1.3rem;
+   }
+
+   .tag-content p {
+      font-size: 0.95rem;
+   }
+
+
+   /* ---------- NAVIGATION ---------- */
+
+   .stick-nav {
+      position: static;
+   }
+
+   .nav {
+      gap: 5px;
+      padding: 10px 5px;
+   }
+
+   .nav a {
+      font-size: 14px;
+      margin: 3px;
+      padding: 8px 10px;
+   }
+
+
+   /* ---------- INTRO ---------- */
+
+   #intro-para {
+      width: 90%;
+      padding: 50px 0 0;
+      font-size: 1rem;
+      line-height: 1.6;
+   }
+
+
+   /* ---------- WHY CHOOSE ---------- */
+
+   .why-choose {
+      align-items: center;
+      justify-content: center;
+
+      padding: 70px 20px;
+
+      min-height: 500px;
+      height: auto;
+   }
+
+   .why-child-div {
+      width: 100%;
+      max-width: 500px;
+      padding: 20px;
+   }
+
+   .why-child-div h2 {
+      font-size: 1.4rem;
+   }
+
+   .why-child-div li {
+      font-size: 0.95rem;
+      margin: 8px 0;
+   }
+
+
+   /* ---------- SERVICES ---------- */
+
+   .our-services {
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+      gap: 20px;
+   }
+
+   .our-services div {
+      width: 90%;
+      max-width: 450px;
+      min-height: 180px;
+      padding: 25px;
+   }
+
+   .our-services div:hover {
+      transform: scale(1.03);
+   }
+
+
+   /* ---------- REVIEWS ---------- */
+
+   .reviews {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      padding: 0 20px;
+   }
+
+   .reviews > div {
+      width: 90%;
+      max-width: 500px;
+   }
+
+   .reviews p {
+      line-height: 1.6;
+   }
+
+
+   /* ---------- MEMBERSHIP ---------- */
+
+   .membership-plans {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      padding: 0 20px;
+   }
+
+   .membership-plans div {
+      width: 90%;
+      max-width: 450px;
+      padding: 25px;
+   }
+
+
+   /* ---------- FOOTER ---------- */
+
+   footer {
+      padding: 25px 15px;
+   }
+
+   footer h3 {
+      font-size: 1.1rem;
+   }
+
+   footer p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+   }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   Screens 480px and below
+========================================================= */
+
+@media (max-width: 480px) {
+
+   header h1 {
+      font-size: 1.35rem;
+      border-width: 0 0 3px 0;
+   }
+
+   .taglogo-align img {
+      width: 100px;
+      height: 100px;
+   }
+
+   .tag-content h2 {
+      font-size: 1.15rem;
+   }
+
+   .tag-content p {
+      font-size: 0.9rem;
+   }
+
+
+   /* ---------- NAV ---------- */
+
+   .nav {
+      gap: 2px;
+      padding: 8px 3px;
+   }
+
+   .nav a {
+      font-size: 13px;
+      margin: 2px;
+      padding: 7px 8px;
+   }
+
+
+   /* ---------- INTRO ---------- */
+
+   #intro-para {
+      width: 92%;
+      padding-top: 40px;
+      font-size: 0.95rem;
+   }
+
+
+   /* ---------- WHY CHOOSE ---------- */
+
+   .why-choose {
+      padding: 50px 15px;
+      min-height: 450px;
+   }
+
+   .why-child-div {
+      padding: 18px 15px;
+   }
+
+   .why-child-div h2 {
+      font-size: 1.25rem;
+   }
+
+   .why-child-div li {
+      font-size: 0.9rem;
+   }
+
+
+   /* ---------- SERVICES ---------- */
+
+   .our-services {
+      margin: 15px;
+   }
+
+   .our-services div {
+      width: 95%;
+      min-height: 170px;
+      padding: 20px;
+      font-size: 1rem;
+   }
+
+
+   /* ---------- REVIEWS ---------- */
+
+   .reviews {
+      padding: 0 15px;
+   }
+
+   .reviews > div {
+      width: 95%;
+   }
+
+
+   /* ---------- MEMBERSHIP ---------- */
+
+   .membership-plans {
+      padding: 0 15px;
+   }
+
+   .membership-plans div {
+      width: 95%;
+      padding: 20px 15px;
+   }
+
+   #choose-plan {
+      font-size: 1rem;
+   }
+
+
+   /* ---------- BUTTON ---------- */
+
+   #join-now {
+      font-size: 15px;
+      padding: 8px 14px;
+   }
+
+
+   /* ---------- FOOTER ---------- */
+
+   footer {
+      padding: 20px 10px;
+   }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   Screens 360px and below
+========================================================= */
+
+@media (max-width: 360px) {
+
+   header h1 {
+      font-size: 1.2rem;
+   }
+
+   .nav a {
+      font-size: 12px;
+      padding: 6px 7px;
+   }
+
+   .tag-content h2 {
+      font-size: 1.05rem;
+   }
+
+   .tag-content p {
+      font-size: 0.85rem;
+   }
+
+   #intro-para {
+      font-size: 0.9rem;
+   }
+
+   .why-child-div {
+      padding: 15px 10px;
+   }
+
+   .why-child-div h2 {
+      font-size: 1.1rem;
+   }
+
+   .why-child-div li {
+      font-size: 0.85rem;
+   }
+
+   .our-services div {
+      width: 100%;
+   }
+
+   .membership-plans div {
+      width: 100%;
+   }
+}

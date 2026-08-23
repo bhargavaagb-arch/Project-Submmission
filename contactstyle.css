@@ -1,0 +1,641 @@
+
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+   width: 100%;
+}
+
+body {
+   background-color: #FFF3CD;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+
+
+
+header h1 {
+   text-align: center;
+   color: white;
+   border: 5px solid red;
+   border-width: 0px 0px 3px 0px;
+   padding: 10px;
+}
+
+#hardwork {
+   color: red;
+}
+
+header {
+   background-color: black;
+}
+
+
+
+
+section {
+   background-color: #FFF3CD;
+}
+
+
+
+#logo-image {
+   margin: 15px 0px 0px 0px;
+   width: auto;
+   max-width: 100%;
+   border-radius: 60%;
+}
+
+
+
+
+#contact-p {
+   text-align: center;
+   padding: 0 15px;
+}
+
+#contact-head {
+   text-align: center;
+}
+
+#gym-name {
+   color: white;
+}
+
+
+/* =========================
+   MAIN HEADER
+========================= */
+
+.main-header {
+   text-align: center;
+   color: white;
+   background-color: #111111;
+   width: 100%;
+}
+
+.main-header h1 {
+   margin-bottom: 10px;
+}
+
+
+/* =========================
+   LOGO + TAGLINE
+========================= */
+
+.taglogo-align {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+   padding: 0 20px 20px;
+}
+
+.taglogo-align img {
+   width: 150px;
+   height: 150px;
+   object-fit: cover;
+   flex-shrink: 0;
+}
+
+.tag-content {
+   text-align: center;
+   max-width: 400px;
+}
+
+.tag-content h2 {
+   margin: 0 0 10px;
+   color: yellow;
+}
+
+.tag-content p {
+   margin: 0;
+   line-height: 1.5;
+   color: yellow;
+}
+
+
+/* =========================
+   STICKY NAVIGATION
+   LAPTOP / DESKTOP / TABLET
+========================= */
+
+.stick-nav {
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   background-color: #111111;
+   width: 100%;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   flex-wrap: wrap;
+   text-align: center;
+   padding: 15px;
+   border: 5px solid red;
+   border-width: 0px 0px 3px 0px;
+}
+
+.nav a {
+   color: white;
+   text-decoration: none;
+   font-size: 15px;
+   margin: 0 15px;
+   padding: 8px 15px;
+   border-radius: 5px;
+   transition: 0.3s;
+   display: inline-block;
+}
+
+.nav a:hover {
+   background-color: #1F6F5F;
+   color: white;
+   transform: scale(1.1);
+}
+
+
+/* =========================
+   ENQUIRY FORM SECTION
+========================= */
+
+.enquiry-form {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   gap: 80px;
+
+   width: 100%;
+   max-width: 1200px;
+
+   margin: 0 auto;
+   padding: 30px 40px;
+}
+
+
+/* =========================
+   GET IN TOUCH
+========================= */
+
+.get-in-touch {
+   padding: 30px 0px 0px 0px;
+   text-align: center;
+   font-size: large;
+
+   flex: 1;
+   max-width: 450px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form {
+   padding: 27px 0px 0px 0px;
+   font-size: large;
+
+   flex: 1;
+   max-width: 500px;
+}
+
+
+/* Make form elements responsive */
+
+.form input,
+.form textarea,
+.form select {
+   max-width: 100%;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="number"],
+.form textarea,
+.form select {
+   width: 100%;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+#button {
+   background-color: #E10600;
+   color: white;
+   border: 2px solid #E10600;
+   padding: 8px 15px;
+   border-radius: 8px;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+#button:hover {
+   background-color: #000;
+   border-color: #FFD700;
+   color: #FFD700;
+   transform: scale(1.05);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+   background-color: #FFF3CD;
+   color: #000000;
+   text-align: center;
+   padding: 25px;
+   margin-top: 40px;
+   width: 100%;
+}
+
+footer h3 {
+   color: #000000;
+   margin-bottom: 10px;
+   border: 5px solid red;
+   border-width: 3px 0px 0px 0px;
+   padding-top: 15px;
+}
+
+footer p {
+   margin: 8px;
+}
+
+
+/* =========================================================
+   TABLET
+   Screens approximately 769px - 1024px
+
+   NAV REMAINS STICKY
+========================================================= */
+
+@media (max-width: 1024px) {
+
+   /* Header */
+
+   header h1 {
+      font-size: 1.8rem;
+   }
+
+
+   /* Logo + tagline */
+
+   .taglogo-align {
+      gap: 25px;
+   }
+
+   .tag-content {
+      max-width: 350px;
+   }
+
+
+   /* Navigation */
+
+   .nav {
+      gap: 10px;
+   }
+
+   .nav a {
+      margin: 0 5px;
+   }
+
+
+   /* Enquiry section */
+
+   .enquiry-form {
+      gap: 40px;
+      padding: 30px;
+   }
+
+   .get-in-touch {
+      max-width: 400px;
+   }
+
+   .form {
+      max-width: 450px;
+   }
+}
+
+
+/* =========================================================
+   MOBILE
+   Screens 768px and below
+
+   NAV IS NOT STICKY
+========================================================= */
+
+@media (max-width: 768px) {
+
+   /* ---------- HEADER ---------- */
+
+   header h1 {
+      font-size: 1.6rem;
+      padding: 10px 15px;
+   }
+
+
+   /* ---------- LOGO + TAGLINE ---------- */
+
+   .taglogo-align {
+      flex-direction: column;
+      gap: 15px;
+      padding: 10px 20px 25px;
+   }
+
+   .taglogo-align img {
+      width: 120px;
+      height: 120px;
+   }
+
+   .tag-content {
+      width: 100%;
+      max-width: 450px;
+   }
+
+   .tag-content h2 {
+      font-size: 1.3rem;
+   }
+
+   .tag-content p {
+      font-size: 0.95rem;
+   }
+
+
+   /* ---------- NAVIGATION ---------- */
+
+   .stick-nav {
+      position: static;
+   }
+
+   .nav {
+      gap: 5px;
+      padding: 10px 5px;
+   }
+
+   .nav a {
+      font-size: 14px;
+      margin: 3px;
+      padding: 8px 10px;
+   }
+
+
+   /* ---------- CONTACT ---------- */
+
+   #contact-p {
+      width: 90%;
+      margin: auto;
+      line-height: 1.6;
+   }
+
+   #contact-head {
+      font-size: 1.5rem;
+   }
+
+
+   /* ---------- ENQUIRY FORM ---------- */
+
+   .enquiry-form {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      gap: 20px;
+
+      width: 100%;
+      padding: 30px 20px;
+   }
+
+
+   /* ---------- GET IN TOUCH ---------- */
+
+   .get-in-touch {
+      width: 100%;
+      max-width: 500px;
+
+      padding: 20px 10px 0px 10px;
+
+      text-align: center;
+      font-size: large;
+   }
+
+
+   /* ---------- FORM ---------- */
+
+   .form {
+      width: 100%;
+      max-width: 500px;
+
+      padding: 10px;
+
+      font-size: large;
+   }
+
+   .form input[type="text"],
+   .form input[type="email"],
+   .form input[type="tel"],
+   .form input[type="number"],
+   .form textarea,
+   .form select {
+      width: 100%;
+      max-width: 100%;
+   }
+
+
+   /* ---------- BUTTON ---------- */
+
+   #button {
+      font-size: 15px;
+      padding: 8px 14px;
+   }
+
+
+   /* ---------- FOOTER ---------- */
+
+   footer {
+      padding: 25px 15px;
+   }
+
+   footer h3 {
+      font-size: 1.1rem;
+   }
+
+   footer p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+   }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   Screens 480px and below
+========================================================= */
+
+@media (max-width: 480px) {
+
+   /* ---------- HEADER ---------- */
+
+   header h1 {
+      font-size: 1.35rem;
+   }
+
+
+   /* ---------- LOGO ---------- */
+
+   .taglogo-align img {
+      width: 100px;
+      height: 100px;
+   }
+
+   .tag-content h2 {
+      font-size: 1.15rem;
+   }
+
+   .tag-content p {
+      font-size: 0.9rem;
+   }
+
+
+   /* ---------- NAV ---------- */
+
+   .nav {
+      gap: 2px;
+      padding: 8px 3px;
+   }
+
+   .nav a {
+      font-size: 13px;
+      margin: 2px;
+      padding: 7px 8px;
+   }
+
+
+   /* ---------- CONTACT ---------- */
+
+   #contact-head {
+      font-size: 1.3rem;
+   }
+
+   #contact-p {
+      width: 92%;
+      font-size: 0.9rem;
+   }
+
+
+   /* ---------- ENQUIRY ---------- */
+
+   .enquiry-form {
+      padding: 20px 15px;
+      gap: 10px;
+   }
+
+   .get-in-touch {
+      padding: 15px 5px 0;
+      font-size: 1rem;
+   }
+
+   .form {
+      padding: 10px 5px;
+      font-size: 1rem;
+   }
+
+
+   /* ---------- FOOTER ---------- */
+
+   footer {
+      padding: 20px 10px;
+   }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   Screens 360px and below
+========================================================= */
+
+@media (max-width: 360px) {
+
+   header h1 {
+      font-size: 1.2rem;
+   }
+
+
+   /* ---------- NAV ---------- */
+
+   .nav a {
+      font-size: 12px;
+      padding: 6px 7px;
+   }
+
+
+   /* ---------- LOGO ---------- */
+
+   .taglogo-align img {
+      width: 90px;
+      height: 90px;
+   }
+
+   .tag-content h2 {
+      font-size: 1.05rem;
+   }
+
+   .tag-content p {
+      font-size: 0.85rem;
+   }
+
+
+   /* ---------- CONTACT ---------- */
+
+   #contact-head {
+      font-size: 1.2rem;
+   }
+
+   #contact-p {
+      font-size: 0.85rem;
+   }
+
+
+   /* ---------- FORM ---------- */
+
+   .enquiry-form {
+      padding: 15px 10px;
+   }
+
+   .get-in-touch {
+      font-size: 0.95rem;
+   }
+
+   .form {
+      font-size: 0.95rem;
+   }
+
+
+   /* ---------- BUTTON ---------- */
+
+   #button {
+      font-size: 14px;
+      padding: 7px 12px;
+   }
+}
